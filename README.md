@@ -18,5 +18,5 @@ This project is a 3D animated Rubik’s Cube created purely with **HTML** and **
 
 ## 🔗 Live Preview
 
-[Click here to view the live project](https://lohithadamisetti123.github.io/Invitation-Card-Project-html-css-/)
+[Click here to view the live project]( https://lohithadamisetti123.github.io/Rubik-s_Cube-html-css-/)
 
