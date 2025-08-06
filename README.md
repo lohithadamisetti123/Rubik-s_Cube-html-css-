@@ -16,6 +16,11 @@ This project is a 3D animated Rubik’s Cube created purely with **HTML** and **
 - Each face contains 9 smaller `.child1` divs to simulate a Rubik’s cube tile layout.
 - Keyframe animations are used to rotate the cube and animate face spacing.
 
+## 📸 Screenshots
+
+<img width="728" height="702" alt="Screenshot 2025-08-06 204521" src="https://github.com/user-attachments/assets/7218942e-875e-4b85-92f9-8118b1d80d97" />
+
+
 ## 🔗 Live Preview
 
 [Click here to view the live project]( https://lohithadamisetti123.github.io/Rubik-s_Cube-html-css-/)
