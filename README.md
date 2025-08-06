@@ -18,7 +18,7 @@ This project is a 3D animated Rubik’s Cube created purely with **HTML** and **
 
 ## 📸 Screenshots
 
-<img width="728" height="702" alt="Screenshot 2025-08-06 204521" src="https://github.com/user-attachments/assets/7218942e-875e-4b85-92f9-8118b1d80d97" />
+<img width="328" height="302" alt="Screenshot 2025-08-06 204521" src="https://github.com/user-attachments/assets/7218942e-875e-4b85-92f9-8118b1d80d97" />
 
 
 ## 🔗 Live Preview
