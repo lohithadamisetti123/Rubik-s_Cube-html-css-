@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>lohi</title>
+        <style>
+           body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            top:100svh;
+            perspective: 1000px;
+           }
+           .cube{
+            width:200px;
+            height:200px;
+            animation: myanime 8s infinite linear;
+            position: relative;
+            transform-style: preserve-3d;
+           }
+            .child1{
+             width: 60px;
+            height: 60px;
+            border: 2px solid white;
+            border-radius: 8px;
+           }
+           .front .child1  {
+             background-color: orange; 
+            }
+        .back .child1   { 
+            background-color: whitesmoke; 
+        }
+        .right .child1  { 
+            background-color: blue; 
+        }
+        .left .child1   { 
+            background-color: red; }
+        .top .child1    { 
+            background-color: yellow; }
+        .bottom .child1 { 
+            background-color: green; }
+
+           @keyframes myanime{
+              0% {
+                transform: rotateX(0deg) rotateY(0deg) scale3d(0.5, 0.5, 0.5);
+            }
+            50% {
+                transform: rotateX(180deg) rotateY(180deg) scale3d(1.5, 1.5, 1.5);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg) scale3d(0.5, 0.5, 0.5);
+            }
+           }
+           @keyframes gapExpand {
+                0%, 100% { gap: 2px; }
+                50%      { gap: 6px; }
+            }
+           .face{
+             position: absolute;
+            width: 200px;
+            height: 200px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2px;
+            transform-style: preserve-3d;
+            animation: gapExpand 8s infinite linear;
+           }
+           .left{
+            transform:rotateY(90deg) translateZ(100px);
+             /* background-color: red; */
+           }
+           .right{
+            transform:rotateY(90deg) translateZ(-100px);
+             /* background-color: blue; */
+           }
+           .top{
+            transform:rotateX(90deg) translateZ(-100px);
+             /* background-color: yellow; */
+           }
+           .bottom{
+            transform:rotateX(90deg) translateZ(100px);
+             /* background-color: green; */
+           }
+           .front{
+            transform:translateZ(100px);
+             /* background-color: orange; */
+           }
+           .back{
+            transform:translateZ(-100px);
+             /* background-color: purple; */
+           }
+        </style>
+    </head>
+    <body>
+        <div class="cube">
+            <div class="face left">
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            </div>
+            <div class="face right">
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            </div>
+            <div class="face top">
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            </div>
+            <div class="face bottom">
+                <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            </div>
+            <div class="face front">
+                <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            </div>
+            <div class="face back">
+                <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            <div class="child1"></div>
+            </div>
+        </div>
+    </body>
+</html>
